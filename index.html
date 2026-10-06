@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex"><title>Happy 30th, Helsie</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><circle cx='5' cy='5' r='4' fill='%23E9B726'/><circle cx='5' cy='5' r='2' fill='%234a3320'/></svg>">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#F6EEDC"><meta name="description" content="A little something for a very special birthday."><meta property="og:title" content="Happy 30th Birthday!"><meta property="og:description" content="Open your gift."><meta property="og:type" content="website"><circle cx='5' cy='5' r='4' fill='%23E9B726'/><circle cx='5' cy='5' r='2' fill='%234a3320'/></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Lora:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{--forest:#1F4D4A;--sage:#7FA8A0;--mist:#DCE8E3;--plum:#6B4C7A;--lilac:#C9B8DA;--gold:#E9B726;--honey:#F3D77A;--parch:#F6EEDC;--ink:#2A2430}
@@ -157,5 +157,6 @@ b.onclick=()=>{b.classList.add('o');burst(...mid(b),i==5?36:14);show(`<small>${t
 C.tarot.forEach(([nu,sy,t,l])=>{let e=document.createElement('div');e.className='t';e.tabIndex=0;e.innerHTML=`<div class="ti"><div class="ba">${ic('sf')}<p class="hw" style="font-size:24px;margin-top:10px">♎</p></div><div class="fa"><small>${nu}</small>${ic(sy,sy=='sf'?100:50)}<h3>${t}</h3><p>${l}</p></div></div>`;e.onclick=()=>e.classList.toggle('f');e.onkeydown=k=>(k.key=='Enter'||k.key==' ')&&e.click();$('#deck').append(e)});
 // ---- reveal + counter
 const D=Math.max(0,Math.floor((Date.now()-new Date(C.met))/864e5));
-new IntersectionObserver((es,o)=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');if(x.target.id=='us'){let t0=performance.now();(function f(t){let k=Math.min(1,(t-t0)/1600);$('#days').textContent=Math.round(D*k);k<1&&requestAnimationFrame(f)})(t0)}o.unobserve(x.target)}}),{threshold:.12}).observe&&document.querySelectorAll('.rv').forEach(function(el){window._io=window._io||new IntersectionObserver((es,o)=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');if(x.target.id=='us'){let t0=performance.now();(function f(t){let k=Math.min(1,(t-t0)/1600);$('#days').textContent=Math.round(D*k);k<1&&requestAnimationFrame(f)})(t0)}o.unobserve(x.target)}}),{threshold:.1});window._io.observe(el)});
+const io=new IntersectionObserver((es,o)=>es.forEach(x=>{if(!x.isIntersecting)return;x.target.classList.add('on');if(x.target.id=='us'){let t0=performance.now();(function f(t){let k=Math.min(1,(t-t0)/1600);$('#days').textContent=Math.round(D*k);k<1&&requestAnimationFrame(f)})(t0)}o.unobserve(x.target)}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script></body></html>
