@@ -5,118 +5,124 @@ const C = {
 
     met: "2025-08-04",
 
-    hours: "X",
+    hours: "3 hours, 30 minutes",
+    kilometres: "~7,575 km",
 
     song: "https://open.spotify.com/track/7y0C2c0wVLUivXy6kUM0nQ",
 
     reasons: [
         "You understand my moods before I've even finished typing.",
-        "We've barely gone a day without talking, and I never get tired of it.",
-        "You make \"I can't decide\" sound like a personality trait, and honestly it's iconic.",
-        "You're the first person I want to tell everything to.",
-        "You turned a random online friendship into my favourite part of the day.",
-        "You will always have an opinion on a wine, even if you can't pick a restaurant.",
-        "You're spontaneous in the best way, the plans are chaos and somehow always fun.",
-        "You let me rant about people on moa twt without ever judging me (you join in).",
-        "You treat TXT news like breaking headlines, and so do I.",
+        "When we don't speak for a while, it feels like a long time, and when we do, it feels like no time at all.",
+        "You make \"I can't decide\" sound like a personality trait (it's a Libra thing, I get it).",
+        "You're the first person I want to share my good news with, and the first person I want to rant to about my bad news.",
+        "Your obsession with wine is contagious, and I love that it made me love wine even more.",
+        "I know when you go shopping, you're about to come back with a haul and a story.",
+        "You're spontaneous in the best way, the plans are chaos and somehow always fun. Teach me your ways.",
+        "You make me feel like bitching about others is a good thing, and that it's okay to be petty sometimes.",
+        "I love your random snaps of what you're making, chef Hels.",
         "You've sat through my Taylor Swift theories and added your own.",
-        "You hype GD like he's your personal friend, and I love that energy.",
-        "You make every sweet treat feel like a celebration.",
-        "You show up as the same you every single day.",
+        "I love that you never tell me no, always enabling my chaos and supporting my ideas.",
+        "You're so easy to ragebait(sorry not sorry)!",
+        "Your determination and care at work really does inspire me to be better at mine.",
         "You're so bright that a bad day feels smaller around you.",
-        "You know when to be funny and when to just listen.",
-        "You make fall feel even cozier and Christmas feel earlier.",
-        "You're the reason I check my phone with a smile.",
-        "You give the best \"no, you're right, they're wrong\" support.",
-        "Shopping with you (even virtually) is a sport and you're the champion.",
-        "You celebrate my small wins like they're big ones.",
-        "You remember the little things I say.",
-        "You make me laugh when I'm trying to be serious.",
-        "You never made me feel like too much.",
-        "You're loyal in a way that's rare, online or offline.",
-        "You're proof that distance is just a number.",
-        "You're the friend who'd say \"I'm in\" before hearing the plan.",
-        "You love hard and it shows in everything you do.",
-        "You make me feel like I belong.",
-        "Every version of you, decisive or not, is my favourite.",
+        "You know when to be funny and make me smile, and when to just listen and let me vent.",
+        "I love that you're excited about Christmas 8 months in advance, just like me.",
+        "I love that Zac and Zoe are completely your kids too, always asking about them and begging for their pics.",
+        "I love how excited you get about TXT updates, especially Yeonjun ones, and how you always send me the best posts.",
+        "I love that we can have thoughtful, deep conversations, and absolutely ridiculous ones too.",
+        "You celebrate my small wins like they're your big ones.",
+        "You remember the little things I say. Literally, all of them.",
+        "Whenever we call, all we do is giggle and laugh, and it honestly makes my day.",
+        "I just know you'd support me in anything (even if I accidentally murdered someone).",
+        "I love that we're different too, but we always get each other and have the other's back.",
+        "You're proof that distance is just a number. And if we were in the same city, the world would explode.",
+        "You're so kind and caring for your friends, and you're always doing small things to make them feel loved and appreciated.",
+        "I love that you romanticise the small things in life, and that inspire me to do the same.",
+        "You're the Yeonjun to my Soobin. Enough said.",
+        "You love hard, and you love well. I hope you know how much I love you.",
         "You turned 30, and I'm so glad I get to know you at this age and every one after."
     ],
 
-    gems: [
-        {
-            type: "opal",
-            message: "Fun fact: the first message you ever sent me changed my whole year."
-        },
-        {
-            type: "tour",
-            message: "If you're reading this, you're probably holding a glass of wine. Cheers to you."
-        },
-        {
-            type: "lapis",
-            message: "Whatever 30 looks like, I'm still here, still texting, still yours."
-        }
+  gems: [
+    [
+        "opal",
+        "Fun fact: Can you believe our first message was about Big Bang?"
     ],
-
-    envelopes: [
-        {
-            title: "Open when you need a laugh",
-            message: "Imagine us roasting someone on moa twt at 2am. Now imagine that someone reads it. You're welcome."
-        },
-        {
-            title: "Open when you miss me",
-            message: "I'm one message away, always. Send me a random thought, I'll reply with ten."
-        },
-        {
-            title: "Open when you feel like giving up",
-            message: "You've gotten through every hard day so far. Take a sip of something nice, breathe, and let me hype you up until you remember who you are."
-        },
-        {
-            title: "Open on a bad day",
-            message: "Put on a Taylor Swift album, get a sweet treat, and tell me everything. I'll be right here."
-        },
-        {
-            title: "Open when you can't sleep",
-            message: "Same. Text me. We'll solve nothing, but we'll laugh."
-        },
-        {
-            title: "Open on your birthday",
-            message: "Happy 30th! You're getting wine, sweet treats, and a whole lot of love from me. Make a wish, and for once, decide quickly. (Okay, you have until midnight.)"
-        }
+    [
+        "tour",
+        "If you're reading this, you're probably holding a glass of wine. Or you will soon. Cheers to you."
     ],
+    [
+        "lapis",
+        "Whatever 30 looks like, I'm still here, still texting, still yours."
+    ]
+],
 
-    tarot: [
-        {
-            number: "I",
-            artwork: "sf",
-            title: "The Sunflower",
-            message: "You turn towards the light and bring everyone with you."
-        },
-        {
-            number: "II",
-            artwork: "sc",
-            title: "The Scales",
-            message: "You balance every opinion, every craving, every outfit, and somehow decide nothing. We love you for it."
-        },
-        {
-            number: "III",
-            artwork: "opal",
-            title: "The Opal",
-            message: "Rare, shimmering, and different from every angle. There's only one of you."
-        },
-        {
-            number: "IV",
-            artwork: "moon",
-            title: "The Night Owl",
-            message: "The one who's always online when I need her, with the best late-night takes."
-        },
-        {
-            number: "V",
-            artwork: "tour",
-            title: "The Best Friend",
-            message: "The final card. It doesn't need a description, you already know."
-        }
+env: [
+    [
+        "Open when you need a laugh",
+        "Hvor mange svensker tar det å bytte en lyspære?\nTo, en som holder lyspæren og en som snur stolen."
     ],
+    [
+        "Open when you miss me",
+        "Hi, this is raven. I miss you too. This is your permission to spam me with 10+ messages in a row, and I will respond to all of them. I love you."
+    ],
+    [
+        "Open when you feel like giving up",
+        "You've gotten through every hard day so far. Take a sip of something nice, breathe, and let me hype you up until you remember who you are."
+    ],
+    [
+        "Open on a bad day",
+        "Put on a Taylor Swift album, get a sweet treat, and tell me everything. I'll be right here."
+    ],
+    [
+        "Open when you can't sleep",
+        "Same. Text me. We'll solve nothing, but we'll laugh."
+    ],
+    [
+        "Open on your birthday",
+        "Happy 30th! You're getting wine, sweet treats, and a whole lot of love from me. Make a wish, and for once, decide quickly. (Okay, you have until midnight.)"
+    ]
+],
 
-    final:
-        "Happy 30th birthday! Thank you for being the person who gets my moods, my rants, my fandom brain and my random 3am thoughts. I don't know what I did to deserve a friend like you, but I'm so glad I said hi. Here's to fall, Christmas, good wine, sweet treats, and many more years of chaos with you. Love, Raven"
-};
+   tarot: [
+    [
+        "I",
+        "sf",
+        "The Sunflower",
+        "You turn towards the light and bring the light to everyone around you. You are a bright, warm, and beautiful soul."
+    ],
+    [
+        "II",
+        "sc",
+        "The Scales",
+        "You balance every opinion, every craving, every outfit, by making absolutely no decisions. Love you for it."
+    ],
+    [
+        "III",
+        "opal",
+        "The Opal",
+        "You're a rare, shimmering, and unique stone, with a bright shine, a different colour from every angle. There's only one of you."
+    ],
+    [
+        "IV",
+        "sun",
+        "The Sun",
+        "The one who's always online, and always has something positive to say. Or something really scathing, just like the sun. "
+    ],
+    [
+        "V",
+        "tour",
+        "My Person",
+        "The final card. It doesn't need a description, you already know how much you mean to me. You are my best friend, and I love you."
+    ]
+],
+
+final:
+    "Happy 30th birthday, my dear Helsie!\n\n" +
+    "Thank you for being the person who gets my moods, my rants, my fandom brain and my random 3am thoughts. I don't know what I did to deserve a friend like you, but I'm so glad we started screaming at each other through that one DM.\n\n" +
+    "Here's to more seasons, more festivals, more dreary work days, more giggly calls, and more years of fun and adventure with you.\n\n" +
+    "Here's to more helsraven.\n\n" +
+    "Love,\n" +
+    "Raven"
+}

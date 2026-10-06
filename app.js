@@ -10,6 +10,49 @@ for (let i = 0; i < 8; i++)c += `<path d="M0-8C-26-30-22-70-8-82L0-74L8-82C22-70
 $('#df').innerHTML = `<linearGradient id="g1" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#F3D77A"/><stop offset="1" stop-color="#E9B726"/></linearGradient><linearGradient id="g2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E9B726"/><stop offset="1" stop-color="#D99A00"/></linearGradient><linearGradient id="g3" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E7D9F5"/><stop offset="1" stop-color="#C9B8DA"/></linearGradient><radialGradient id="g4"><stop offset="0" stop-color="#6B4A2B"/><stop offset="1" stop-color="#3D2A17"/></radialGradient>
 <linearGradient id="gop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#bfe9e2"/><stop offset="1" stop-color="#e3c9f0"/></linearGradient><linearGradient id="gt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd0e0"/><stop offset="1" stop-color="#d9578a"/></linearGradient><linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7d8cf0"/><stop offset="1" stop-color="#3b2a8c"/></linearGradient>
 <symbol id="sf" viewBox="-100 -100 200 200" overflow="visible"><circle r="98" fill="#0002" transform="translate(4 6)" opacity=".25"/>${p}${q}<circle r="35" fill="url(#g4)"/>${d}</symbol>
+<symbol id="sun" viewBox="-50 -50 100 100" overflow="visible">
+    <!-- outer rays -->
+    <path
+        d="M0-46L6-31L0-34L-6-31Z
+           M32-32L25-18L22-23L20-28Z
+           M46 0L31 6L34 0L31-6Z
+           M32 32L20 28L22 23L25 18Z
+           M0 46L-6 31L0 34L6 31Z
+           M-32 32L-25 18L-22 23L-20 28Z
+           M-46 0L-31-6L-34 0L-31 6Z
+           M-32-32L-20-28L-22-23L-25-18Z"
+        fill="#E9B726"
+        stroke="#C28E0E"
+        stroke-width="1.5"
+        stroke-linejoin="round"
+    />
+
+    <!-- sun -->
+    <circle
+        r="23"
+        fill="#F3D77A"
+        stroke="#C28E0E"
+        stroke-width="2"
+    />
+
+    <!-- inner glow -->
+    <circle
+        cx="-6"
+        cy="-7"
+        r="7"
+        fill="#fff"
+        opacity=".22"
+    />
+
+    <!-- little centre detail -->
+    <circle
+        cx="5"
+        cy="5"
+        r="2"
+        fill="#E9B726"
+        opacity=".55"
+    />
+</symbol>
 <symbol id="mg" viewBox="-100 -100 200 200" overflow="visible">${m}</symbol>
 <symbol id="cs" viewBox="-100 -100 200 200" overflow="visible">${c}<circle r="13" fill="#E9B726"/><circle r="6" fill="#c98f0a"/></symbol>
 <symbol id="opal" viewBox="-50 -50 100 100" overflow="visible"><polygon points="0,-42 36,-21 36,21 0,42 -36,21 -36,-21" fill="url(#gop)" stroke="#9bb" stroke-width="2"/><path d="M0-42V42M-36-21L36 21M36-21L-36 21" stroke="#fff" stroke-opacity=".7"/><circle cx="-10" cy="-8" r="4" fill="#f9a8d4" opacity=".7"/></symbol>
@@ -19,7 +62,7 @@ $('#df').innerHTML = `<linearGradient id="g1" x1="0" y1="1" x2="0" y2="0"><stop 
 <symbol id="mush" viewBox="-50 -50 100 100" overflow="visible"><path d="M-8 6H8L11 40Q0 46-11 40Z" fill="#f6eedc"/><path d="M-42 8Q-40-38 0-40T42 8Q0 18-42 8Z" fill="#d9578a"/><circle cx="-18" cy="-12" r="6" fill="#fff" opacity=".9"/><circle cx="10" cy="-22" r="5" fill="#fff" opacity=".9"/><circle cx="24" cy="-4" r="4" fill="#fff" opacity=".9"/></symbol><symbol id="moon" viewBox="-50 -50 100 100" overflow="visible"><path d="M12-40A40 40 0 1 0 40 22A32 32 0 1 1 12-40Z" fill="#F3D77A" stroke="#C28E0E" stroke-width="2"/></symbol>`;
 const ic = (id, v = 100) => `<svg viewBox="-${v} -${v} ${2 * v} ${2 * v}"><use href="#${id}" x="-${v}" y="-${v}" width="${2 * v}" height="${2 * v}"/></svg>`;
 // ---- text
-const T = (s, f) => { const e = $(s); e && f(e) }; T('#nm', e => e.textContent = C.friend); T('#by', e => e.textContent = C.you); T('#hrs', e => e.textContent = C.hours); T('#fm', e => e.textContent = C.final); T('#sg', e => e.href = C.song); document.title = document.title.replace('Helsie', C.friend);
+const T = (s, f) => { const e = $(s); e && f(e) }; T('#nm', e => e.textContent = C.friend); T('#by', e => e.textContent = C.you); T('#hrs', e => e.textContent = C.hours); T('#kilometres', e => e.textContent = C.kilometres); T('#fm', e => e.textContent = C.final); T('#sg', e => e.href = C.song); document.title = document.title.replace('Helsie', C.friend);
 if ($('#art')) {
     let lv = '', st = '', fl = '';
     [[-78, 1.05], [-58, 1.25], [-38, 1.45], [-18, 1.5], [18, 1.5], [38, 1.45], [58, 1.25], [78, 1.05], [-48, .9], [48, .9]].forEach(([a, s], i) => lv += `<g transform="translate(250 495) rotate(${a}) scale(${s})"><g class="pop sw" style="--d:${.2 + i * .05}s;--t:${5 + i % 3}s"><path d="M0 0C24-34 24-80 0-125C-24-80-24-34 0 0Z" fill="${['#1F4D4A', '#2d6a63', '#7FA8A0'][i % 3]}"/><path d="M0 0V-115" stroke="#DCE8E3" stroke-opacity=".55" stroke-width="2"/></g></g>`);
