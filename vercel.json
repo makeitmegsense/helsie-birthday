@@ -1,5 +1,10 @@
 {
-  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/reasons", "destination": "/reasons.html" },
+    { "source": "/open-when", "destination": "/open-when.html" },
+    { "source": "/cards", "destination": "/cards.html" },
+    { "source": "/us", "destination": "/us.html" }
+  ],
   "headers": [
     { "source": "/(.*)", "headers": [
       { "key": "X-Robots-Tag", "value": "noindex, nofollow" },

@@ -1,14 +1,11 @@
-# Birthday site
+# Helsie's birthday site
 
-A static site: no build step, no dependencies.
+Static multi-page site: no build step, no dependencies.
 
-## Edit the content
-Open `index.html`, find `const C={...}` inside the `<script>` and change:
-friend, you, met (YYYY-MM-DD), hours, song, plus any text.
-Also change the sign-off name at the end of `final`, and the `<title>`.
+- Pages: `index.html`, `reasons.html`, `open-when.html`, `cards.html`, `us.html`
+- All text lives in `const C={...}` at the top of `app.js` (friend, you, met, hours, song, reasons, notes).
+- Theme and animation: `style.css` and the bottom of `app.js`.
 
 ## Deploy on Vercel
-1. Push this folder to a GitHub repo.
-2. Vercel > Add New > Project > import the repo.
-3. Framework Preset: Other. Leave build command and output directory empty. Deploy.
-(Or run `npx vercel --prod` inside this folder.)
+Import the GitHub repo, Framework Preset: Other, leave build and output empty. Deploy.
+Or run `npx vercel --prod` in this folder.
