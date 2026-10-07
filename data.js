@@ -13,7 +13,7 @@ const C = {
     reasons: [
         "You understand my moods before I've even finished typing.",
         "When we don't speak for a while, it feels like a long time, and when we do, it feels like no time at all.",
-        "You make \"I can't decide\" sound like a personality trait (it's a Libra thing, I get it).",
+        "Your daily good morning and good night texts begin and end my day.",
         "You're the first person I want to share my good news with, and the first person I want to rant to about my bad news.",
         "Your obsession with wine is contagious, and I love that it made me love wine even more.",
         "I know when you go shopping, you're about to come back with a haul and a story.",
@@ -25,7 +25,7 @@ const C = {
         "You're so easy to ragebait(sorry not sorry)!",
         "Your determination and care at work really does inspire me to be better at mine.",
         "You're so bright that a bad day feels smaller around you.",
-        "You know when to be funny and make me smile, and when to just listen and let me vent.",
+        "10 voice notes, along with 'HELP' and 'GDHSGDSJ' are enough to make me laugh for hours.",
         "I love that you're excited about Christmas 8 months in advance, just like me.",
         "I love that Zac and Zoe are completely your kids too, always asking about them and begging for their pics.",
         "I love how excited you get about TXT updates, especially Yeonjun ones, and how you always send me the best posts.",

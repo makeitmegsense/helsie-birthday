@@ -53,6 +53,548 @@ $('#df').innerHTML = `<linearGradient id="g1" x1="0" y1="1" x2="0" y2="0"><stop 
         opacity=".55"
     />
 </symbol>
+<!-- =========================
+     LITTLE THINGS ILLUSTRATIONS
+     ========================= -->
+
+<symbol id="candle" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- flame -->
+    <path
+        d="M0-39
+           C-8-30 -9-21 0-15
+           C9-21 8-30 0-39Z"
+        fill="#E9B726"
+        stroke="#B87924"
+        stroke-width="2"
+        stroke-linejoin="round"
+    />
+
+    <!-- glow -->
+    <circle
+        cx="0"
+        cy="-20"
+        r="13"
+        fill="#F3D77A"
+        opacity=".22"
+    />
+
+    <!-- candle -->
+    <rect
+        x="-16"
+        y="-16"
+        width="32"
+        height="48"
+        rx="5"
+        fill="#F5E7C8"
+        stroke="#5B4655"
+        stroke-width="2.5"
+    />
+
+    <!-- wax details -->
+    <path
+        d="M-10-10 C-6-4 -8 1 -10 5
+           M8-8 C4-2 7 3 9 7"
+        fill="none"
+        stroke="#D8C5A5"
+        stroke-width="2"
+        stroke-linecap="round"
+    />
+
+    <!-- wick -->
+    <path
+        d="M0-16V-21"
+        stroke="#5B4655"
+        stroke-width="2"
+        stroke-linecap="round"
+    />
+
+    <!-- base -->
+    <ellipse
+        cx="0"
+        cy="32"
+        rx="21"
+        ry="5"
+        fill="#D9C7A7"
+        stroke="#5B4655"
+        stroke-width="2"
+    />
+
+</symbol>
+
+
+<symbol id="coffee" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- steam -->
+    <path
+        d="M-13-28
+           C-20-36 -8-39 -14-47
+           M3-28
+           C-4-36 8-39 2-47
+           M19-28
+           C12-36 24-39 18-47"
+        fill="none"
+        stroke="#A98A83"
+        stroke-width="2.5"
+        stroke-linecap="round"
+    />
+
+    <!-- cup -->
+    <path
+        d="M-28-22
+           H25
+           V17
+           C25 27 17 33 0 33
+           C-17 33 -28 27 -28 17Z"
+        fill="#F2D6B3"
+        stroke="#5B4655"
+        stroke-width="2.5"
+    />
+
+    <!-- coffee -->
+    <ellipse
+        cx="-1"
+        cy="-22"
+        rx="26"
+        ry="7"
+        fill="#8A5B45"
+        stroke="#5B4655"
+        stroke-width="2.5"
+    />
+
+    <!-- coffee highlight -->
+    <ellipse
+        cx="-7"
+        cy="-24"
+        rx="10"
+        ry="2.5"
+        fill="#B98767"
+        opacity=".75"
+    />
+
+    <!-- handle -->
+    <path
+        d="M25-11
+           C45-13 45 18 25 19"
+        fill="none"
+        stroke="#5B4655"
+        stroke-width="5"
+        stroke-linecap="round"
+    />
+
+    <!-- little heart -->
+    <path
+        d="M-7 3
+           C-12-3 -21 3 -7 13
+           C7 3 -2-3 -7 3Z"
+        fill="#C58A9D"
+        opacity=".75"
+    />
+
+</symbol>
+
+
+<symbol id="phone" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- phone -->
+    <rect
+        x="-29"
+        y="-43"
+        width="58"
+        height="86"
+        rx="9"
+        fill="#E7D8E5"
+        stroke="#5B4655"
+        stroke-width="2.8"
+    />
+
+    <!-- screen -->
+    <rect
+        x="-22"
+        y="-27"
+        width="44"
+        height="51"
+        rx="4"
+        fill="#F8F0E5"
+        stroke="#B59AAE"
+        stroke-width="1.5"
+    />
+
+    <!-- camera -->
+    <circle
+        cx="0"
+        cy="-35"
+        r="3"
+        fill="#5B4655"
+    />
+
+    <!-- selca placeholder -->
+    <circle
+        cx="0"
+        cy="-6"
+        r="10"
+        fill="#F1C7B5"
+    />
+
+    <path
+        d="M-15 15
+           C-11 4 11 4 15 15"
+        fill="#B78BA5"
+    />
+
+    <!-- little hearts -->
+    <path
+        d="M-15-15
+           C-19-20 -26-15 -15-7
+           C-4-15 -11-20 -15-15Z"
+        fill="#C58A9D"
+    />
+
+    <path
+        d="M14-5
+           C11-9 6-5 14 1
+           C22-5 17-9 14-5Z"
+        fill="#E9B726"
+    />
+
+    <!-- home button -->
+    <circle
+        cx="0"
+        cy="34"
+        r="3"
+        fill="#B59AAE"
+    />
+
+</symbol>
+
+
+<symbol id="music" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- vinyl -->
+    <circle
+        cx="-8"
+        cy="7"
+        r="29"
+        fill="#4D4050"
+        stroke="#302938"
+        stroke-width="2.5"
+    />
+
+    <!-- grooves -->
+    <circle
+        cx="-8"
+        cy="7"
+        r="21"
+        fill="none"
+        stroke="#746476"
+        stroke-width="1.5"
+    />
+
+    <circle
+        cx="-8"
+        cy="7"
+        r="13"
+        fill="none"
+        stroke="#746476"
+        stroke-width="1.5"
+    />
+
+    <!-- label -->
+    <circle
+        cx="-8"
+        cy="7"
+        r="6"
+        fill="#E9B726"
+    />
+
+    <circle
+        cx="-8"
+        cy="7"
+        r="2"
+        fill="#F8F0E5"
+    />
+
+    <!-- music note -->
+    <path
+        d="M19-30V12
+           M19-30L37-35V3"
+        fill="none"
+        stroke="#C58A9D"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    />
+
+    <ellipse
+        cx="10"
+        cy="16"
+        rx="10"
+        ry="6"
+        fill="#C58A9D"
+        transform="rotate(-12 10 16)"
+    />
+
+    <ellipse
+        cx="37"
+        cy="7"
+        rx="9"
+        ry="5.5"
+        fill="#C58A9D"
+        transform="rotate(-12 37 7)"
+    />
+
+</symbol>
+
+
+<symbol id="treats" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- shopping bag -->
+    <path
+        d="M-43-18
+           H-4
+           L-8 34
+           H-39Z"
+        fill="#D9A6B8"
+        stroke="#5B4655"
+        stroke-width="2.5"
+        stroke-linejoin="round"
+    />
+
+    <!-- handles -->
+    <path
+        d="M-35-18
+           C-35-36 -13-36 -12-18"
+        fill="none"
+        stroke="#5B4655"
+        stroke-width="2.5"
+    />
+
+    <!-- cupcake -->
+    <path
+        d="M12 0
+           L39 0
+           L34 28
+           H17Z"
+        fill="#E8B7A7"
+        stroke="#5B4655"
+        stroke-width="2.2"
+    />
+
+    <!-- frosting -->
+    <path
+        d="M10 0
+           C10-12 19-16 25-11
+           C29-21 43-15 42-5
+           C42 1 37 4 31 4
+           H16
+           C12 4 10 2 10 0Z"
+        fill="#F5E7C8"
+        stroke="#5B4655"
+        stroke-width="2.2"
+    />
+
+    <!-- cherry -->
+    <circle
+        cx="29"
+        cy="-16"
+        r="4"
+        fill="#B85D68"
+    />
+
+    <path
+        d="M29-20 C31-27 35-28 38-29"
+        fill="none"
+        stroke="#6E7E58"
+        stroke-width="2"
+        stroke-linecap="round"
+    />
+
+</symbol>
+
+
+<symbol id="chat" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- back bubble -->
+    <path
+        d="M-39-25
+           H8
+           C15-25 20-19 20-12
+           V7
+           C20 14 15 19 8 19
+           H-14
+           L-28 31
+           V19
+           H-29
+           C-36 19-41 14-41 7
+           V-13
+           C-41-20-36-25-29-25Z"
+        fill="#D9A6B8"
+        stroke="#5B4655"
+        stroke-width="2.5"
+    />
+
+    <!-- front bubble -->
+    <path
+        d="M-2-4
+           H30
+           C37-4 42 1 42 8
+           V24
+           C42 31 37 36 30 36
+           H17
+           L7 45
+           V36
+           H-2
+           C-9 36-14 31-14 24
+           V8
+           C-14 1-9-4-2-4Z"
+        fill="#F2D6B3"
+        stroke="#5B4655"
+        stroke-width="2.5"
+    />
+
+    <!-- dots -->
+    <circle cx="-23" cy="-4" r="3" fill="#5B4655"/>
+    <circle cx="-12" cy="-4" r="3" fill="#5B4655"/>
+    <circle cx="-1" cy="-4" r="3" fill="#5B4655"/>
+
+    <circle cx="0" cy="14" r="3" fill="#5B4655"/>
+    <circle cx="11" cy="14" r="3" fill="#5B4655"/>
+    <circle cx="22" cy="14" r="3" fill="#5B4655"/>
+
+</symbol>
+
+
+<symbol id="cat" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- ears -->
+    <path
+        d="M-31-21 L-27-43 L-10-30
+           M10-30 L27-43 L31-21"
+        fill="#D8B7A4"
+        stroke="#5B4655"
+        stroke-width="2.5"
+        stroke-linejoin="round"
+    />
+
+    <!-- head -->
+    <path
+        d="M-32-20
+           C-35 7 -20 28 0 28
+           C20 28 35 7 32-20
+           C22-31 11-34 0-34
+           C-11-34-22-31-32-20Z"
+        fill="#D8B7A4"
+        stroke="#5B4655"
+        stroke-width="2.5"
+    />
+
+    <!-- eyes -->
+    <path
+        d="M-19-8 L-9-5
+           M9-5 L19-8"
+        fill="none"
+        stroke="#5B4655"
+        stroke-width="3"
+        stroke-linecap="round"
+    />
+
+    <!-- grumpy brows -->
+    <path
+        d="M-20-16 L-9-19
+           M9-19 L20-16"
+        fill="none"
+        stroke="#5B4655"
+        stroke-width="2.5"
+        stroke-linecap="round"
+    />
+
+    <!-- nose -->
+    <path
+        d="M-4 3 Q0 7 4 3 Q0 9 -4 3Z"
+        fill="#C58A9D"
+    />
+
+    <!-- mouth -->
+    <path
+        d="M0 8 V12
+           M0 12 L-6 15
+           M0 12 L6 15"
+        fill="none"
+        stroke="#5B4655"
+        stroke-width="2"
+        stroke-linecap="round"
+    />
+
+    <!-- whiskers -->
+    <path
+        d="M-17 5 L-38 1
+           M-17 11 L-39 12
+           M17 5 L38 1
+           M17 11 L39 12"
+        fill="none"
+        stroke="#5B4655"
+        stroke-width="1.8"
+        stroke-linecap="round"
+    />
+
+</symbol>
+
+
+<symbol id="shopping" viewBox="-50 -50 100 100" overflow="visible">
+
+    <!-- bag -->
+    <path
+        d="M-31-14
+           H31
+           L25 36
+           H-25Z"
+        fill="#E7D8E5"
+        stroke="#5B4655"
+        stroke-width="2.8"
+        stroke-linejoin="round"
+    />
+
+    <!-- handles -->
+    <path
+        d="M-20-14
+           C-20-37 20-37 20-14"
+        fill="none"
+        stroke="#5B4655"
+        stroke-width="3"
+        stroke-linecap="round"
+    />
+
+    <!-- tissue paper -->
+    <path
+        d="M-23-14
+           L-31-29
+           L-20-23
+           L-12-34
+           L-3-22
+           L7-34
+           L14-22
+           L25-29
+           L20-14Z"
+        fill="#F3D77A"
+        opacity=".9"
+    />
+
+    <!-- little star -->
+    <path
+        d="M0-2
+           L4 7
+           L14 8
+           L6 14
+           L9 24
+           L0 18
+           L-9 24
+           L-6 14
+           L-14 8
+           L-4 7Z"
+        fill="#C58A9D"
+    />
+
+</symbol>
 <symbol id="mg" viewBox="-100 -100 200 200" overflow="visible">${m}</symbol>
 <symbol id="cs" viewBox="-100 -100 200 200" overflow="visible">${c}<circle r="13" fill="#E9B726"/><circle r="6" fill="#c98f0a"/></symbol>
 <symbol id="opal" viewBox="-50 -50 100 100" overflow="visible"><polygon points="0,-42 36,-21 36,21 0,42 -36,21 -36,-21" fill="url(#gop)" stroke="#9bb" stroke-width="2"/><path d="M0-42V42M-36-21L36 21M36-21L-36 21" stroke="#fff" stroke-opacity=".7"/><circle cx="-10" cy="-8" r="4" fill="#f9a8d4" opacity=".7"/></symbol>
@@ -101,8 +643,111 @@ if ($('#deck')) {
     C.tarot.forEach(([nu, sy, t, l]) => { let e = document.createElement('div'); e.className = 't'; e.tabIndex = 0; e.innerHTML = `<div class="ti"><div class="ba">${ic('sf')}<p class="hw" style="font-size:24px;margin-top:10px">♎</p></div><div class="fa"><small>${nu}</small>${ic(sy, sy == 'sf' ? 100 : 50)}<h3>${t}</h3><p>${l}</p></div></div>`; e.onclick = () => e.classList.toggle('f'); e.onkeydown = k => (k.key == 'Enter' || k.key == ' ') && e.click(); $('#deck').append(e) });
 }
 // ---- reveal + counter
-const D = Math.max(0, Math.floor((Date.now() - new Date(C.met)) / 864e5));
-const io = new IntersectionObserver((es, o) => es.forEach(x => { if (!x.isIntersecting) return; x.target.classList.add('on'); if (x.target.id == 'us') { let t0 = performance.now(); (function f(t) { let k = Math.min(1, (t - t0) / 1600); $('#days').textContent = Math.round(D * k); k < 1 && requestAnimationFrame(f) })(t0) } o.unobserve(x.target) }), { threshold: .1 });
+// ---- reveal + friendship counter
+
+const startDate = new Date(C.met + "T00:00:00");
+
+function updateFriendshipCounter() {
+
+    const now = new Date();
+
+    // Exact elapsed time
+    const difference = Math.max(0, now - startDate);
+
+    const totalMinutes = Math.floor(difference / (1000 * 60));
+    const totalHours = Math.floor(difference / (1000 * 60 * 60));
+    const totalDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    // Calendar-based years / months / days
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+    let days = now.getDate() - startDate.getDate();
+
+    if (days < 0) {
+        months--;
+
+        const previousMonth = new Date(
+            now.getFullYear(),
+            now.getMonth(),
+            0
+        );
+
+        days += previousMonth.getDate();
+    }
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    // Pretty calendar version
+    T('#years', e => e.textContent = years);
+    T('#months', e => e.textContent = months);
+    T('#remaining-days', e => e.textContent = days);
+
+    // Total elapsed time
+    T('#total-days', e => e.textContent = totalDays.toLocaleString());
+    T('#total-hours', e => e.textContent = totalHours.toLocaleString());
+    T('#total-minutes', e => e.textContent = totalMinutes.toLocaleString());
+}
+
+
+// Initial calculation
+updateFriendshipCounter();
+
+// Keep it updated every minute
+setInterval(updateFriendshipCounter, 60 * 1000);
+
+
+// Reveal animations
+const io = new IntersectionObserver((es, o) => es.forEach(x => {
+
+    if (!x.isIntersecting) return;
+
+    x.target.classList.add('on');
+
+    if (x.target.id == 'us') {
+
+        // Small animation when the friendship card enters the screen
+        const targets = [
+            '#years',
+            '#months',
+            '#remaining-days',
+            '#total-days',
+            '#total-hours',
+            '#total-minutes'
+        ];
+
+        targets.forEach(selector => {
+            const el = $(selector);
+
+            if (el) {
+                el.animate(
+                    [
+                        {
+                            opacity: 0,
+                            transform: 'translateY(8px)'
+                        },
+                        {
+                            opacity: 1,
+                            transform: 'translateY(0)'
+                        }
+                    ],
+                    {
+                        duration: 700,
+                        easing: 'ease-out',
+                        fill: 'forwards'
+                    }
+                );
+            }
+        });
+    }
+
+    o.unobserve(x.target);
+
+}), { threshold: .1 });
+
+
 document.querySelectorAll('.rv').forEach(el => io.observe(el));
 
 T('#gar', g => { let h = '';['sf', 'mg', 'cs', 'mush', 'cs', 'mg', 'sf'].forEach((t, i) => { h += `<g transform="translate(${50 + i * 100} 45)"><g class="pop" style="--d:${i * .1}s"><g class="sw" style="--t:${4 + i % 3}s;--d2:${-i}s"><use href="#${t}" x="-34" y="-34" width="68" height="68"/></g></g></g>` }); g.innerHTML = '<svg viewBox="0 0 700 90">' + h + '</svg>' });
