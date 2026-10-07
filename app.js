@@ -639,8 +639,521 @@ if ($('#env')) {
         b.onclick = () => { b.classList.add('o'); burst(...mid(b), i == 5 ? 36 : 14); show(`<small>${t}</small><p class="hw" style="font-size:30px;font-weight:500;line-height:1.3">${msg}</p>`) }; $('#env').append(b)
     });
 }
+/* =========================================================
+   HELSIE ARCANA — TAROT DECK
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   LIBRA SVG
+   --------------------------------------------------------- */
+
+$('#df').insertAdjacentHTML('beforeend', `
+
+    <symbol
+        id="libra"
+        viewBox="0 0 100 100"
+        overflow="visible">
+
+        <!-- central pillar -->
+
+        <path
+            d="M50 24 V76"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+        <!-- top ornament -->
+
+        <path
+            d="M43 24 Q50 17 57 24"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+        <circle
+            cx="50"
+            cy="17"
+            r="2.5"
+            fill="#F3D77A"
+        />
+
+
+        <!-- balance beam -->
+
+        <path
+            d="M25 36 Q50 31 75 36"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+
+        <!-- left suspension -->
+
+        <path
+            d="M25 36 L18 55"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.4"
+            stroke-linecap="round"
+        />
+
+        <path
+            d="M25 36 L32 55"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.4"
+            stroke-linecap="round"
+        />
+
+
+        <!-- right suspension -->
+
+        <path
+            d="M75 36 L68 55"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.4"
+            stroke-linecap="round"
+        />
+
+        <path
+            d="M75 36 L82 55"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.4"
+            stroke-linecap="round"
+        />
+
+
+        <!-- left bowl -->
+
+        <path
+            d="M13 55 Q25 67 37 55"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+        <path
+            d="M13 55 H37"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+
+        <!-- right bowl -->
+
+        <path
+            d="M63 55 Q75 67 87 55"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+        <path
+            d="M63 55 H87"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+
+        <!-- base -->
+
+        <path
+            d="M36 76 H64"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+        <path
+            d="M41 82 H59"
+            fill="none"
+            stroke="#F3D77A"
+            stroke-width="2.8"
+            stroke-linecap="round"
+        />
+
+
+        <!-- tiny stars -->
+
+        <circle
+            cx="10"
+            cy="31"
+            r="1.4"
+            fill="#F3D77A"
+        />
+
+        <circle
+            cx="90"
+            cy="31"
+            r="1.4"
+            fill="#F3D77A"
+        />
+
+        <circle
+            cx="18"
+            cy="77"
+            r="1"
+            fill="#F3D77A"
+        />
+
+        <circle
+            cx="82"
+            cy="77"
+            r="1"
+            fill="#F3D77A"
+        />
+
+    </symbol>
+
+`);
+
+
+/* ---------------------------------------------------------
+   BUILD THE TAROT DECK
+   --------------------------------------------------------- */
+
 if ($('#deck')) {
-    C.tarot.forEach(([nu, sy, t, l]) => { let e = document.createElement('div'); e.className = 't'; e.tabIndex = 0; e.innerHTML = `<div class="ti"><div class="ba">${ic('sf')}<p class="hw" style="font-size:24px;margin-top:10px">♎</p></div><div class="fa"><small>${nu}</small>${ic(sy, sy == 'sf' ? 100 : 50)}<h3>${t}</h3><p>${l}</p></div></div>`; e.onclick = () => e.classList.toggle('f'); e.onkeydown = k => (k.key == 'Enter' || k.key == ' ') && e.click(); $('#deck').append(e) });
+
+    C.tarot.forEach(([nu, sy, t, l], i) => {
+
+        const e = document.createElement('div');
+
+        e.className = 't';
+
+        e.tabIndex = 0;
+
+        e.setAttribute(
+            'role',
+            'button'
+        );
+
+        e.setAttribute(
+            'aria-label',
+            `Tarot card ${i + 1}. Click to reveal.`
+        );
+
+
+        e.innerHTML = `
+
+            <div class="ti">
+
+
+                <!-- =====================================
+                     CARD BACK
+                     ===================================== -->
+
+                <div class="ba">
+
+
+                    <!-- corner ornaments -->
+
+                    <div class="tarot-corner top-left">
+                        ✦
+                    </div>
+
+                    <div class="tarot-corner top-right">
+                        ✦
+                    </div>
+
+                    <div class="tarot-corner bottom-left">
+                        ✦
+                    </div>
+
+                    <div class="tarot-corner bottom-right">
+                        ✦
+                    </div>
+
+
+                    <!-- constellation stars -->
+
+                    <div class="tarot-stars">
+
+                        <span class="star s1">✦</span>
+                        <span class="star s2">✧</span>
+                        <span class="star s3">·</span>
+                        <span class="star s4">✦</span>
+                        <span class="star s5">✧</span>
+                        <span class="star s6">·</span>
+                        <span class="star s7">✦</span>
+                        <span class="star s8">✧</span>
+
+                    </div>
+
+
+                    <!-- celestial orbit -->
+
+                    <div class="tarot-orbit outer-orbit"></div>
+
+                    <div class="tarot-orbit inner-orbit"></div>
+
+
+                    <!-- central celestial emblem -->
+
+                    <div class="tarot-emblem">
+
+
+                        <div class="emblem-rays">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="emblem-art">
+
+                            ${ic('sf', 82)}
+
+                        </div>
+
+
+                        <div class="emblem-zodiac">
+
+                            ${ic('libra', 38)}
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- moons -->
+
+                    <div class="tarot-moon moon-left">
+                        ☾
+                    </div>
+
+                    <div class="tarot-moon moon-right">
+                        ☽
+                    </div>
+
+
+                    <!-- deck title -->
+
+                    <div class="tarot-back-title">
+
+                        <span>
+                            THE
+                        </span>
+
+                        <strong>
+                            HELSIE
+                        </strong>
+
+                        <span>
+                            ARCANA
+                        </span>
+
+                    </div>
+
+
+                    <!-- card number -->
+
+                    <div class="tarot-back-number">
+
+                        ${String(i + 1).padStart(2, '0')}
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =====================================
+                     CARD FRONT
+                     ===================================== -->
+
+                <div class="fa">
+
+
+                    <div class="tarot-front-border"></div>
+
+
+                    <!-- corners -->
+
+                    <div class="front-corner top-left">
+                        ✦
+                    </div>
+
+                    <div class="front-corner top-right">
+                        ✦
+                    </div>
+
+                    <div class="front-corner bottom-left">
+                        ✦
+                    </div>
+
+                    <div class="front-corner bottom-right">
+                        ✦
+                    </div>
+
+
+                    <!-- card number -->
+
+                    <div class="tarot-number">
+
+                        ${nu}
+
+                    </div>
+
+
+                    <!-- celestial divider -->
+
+                    <div class="tarot-front-stars">
+
+                        <span>✧</span>
+                        <span>·</span>
+                        <span>✦</span>
+                        <span>·</span>
+                        <span>✧</span>
+
+                    </div>
+
+
+                    <!-- artwork -->
+
+                    <div class="tarot-art">
+
+                        <div class="art-halo"></div>
+
+                        ${ic(
+                            sy,
+                            sy === 'sf' ? 105 : 65
+                        )}
+
+                    </div>
+
+
+                    <!-- title -->
+
+                    <div class="tarot-title">
+
+                        ${t}
+
+                    </div>
+
+
+                    <!-- ornamental divider -->
+
+                    <div class="tarot-divider">
+
+                        <span>✦</span>
+
+                        <i></i>
+
+                        <span>✦</span>
+
+                    </div>
+
+
+                    <!-- interpretation -->
+
+                    <p class="tarot-message">
+
+                        ${l}
+
+                    </p>
+
+
+                    <!-- footer -->
+
+                    <div class="tarot-front-footer">
+
+                        <span class="footer-libra">
+
+                            ${ic('libra', 22)}
+
+                        </span>
+
+                        <span>✧</span>
+
+                        <span>☽</span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        /* ---------------------------------------------
+           FLIP
+           --------------------------------------------- */
+
+        e.onclick = () => {
+
+            const wasFlipped =
+                e.classList.contains('f');
+
+            e.classList.toggle('f');
+
+
+            if (!wasFlipped) {
+
+                burst(
+                    ...mid(e),
+                    18
+                );
+
+                e.setAttribute(
+                    'aria-label',
+                    `Tarot card ${i + 1}. Revealed.`
+                );
+
+            }
+
+        };
+
+
+        /* ---------------------------------------------
+           KEYBOARD ACCESS
+           --------------------------------------------- */
+
+        e.onkeydown = k => {
+
+            if (
+                k.key === 'Enter' ||
+                k.key === ' '
+            ) {
+
+                k.preventDefault();
+
+                e.click();
+
+            }
+
+        };
+
+
+        $('#deck').append(e);
+
+    });
+
 }
 // ---- reveal + counter
 // ---- reveal + friendship counter
