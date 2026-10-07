@@ -5235,3 +5235,19 @@ button:focus-visible {
         width: 100% !important;
     }
 }
+/* =========================================================
+   LITTLE SUN CURSOR
+   ========================================================= */
+
+* {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cg fill='none' stroke='%23F3D77A' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M14 2v3M14 23v3M2 14h3M23 14h3M5.5 5.5l2.1 2.1M20.4 20.4l2.1 2.1M22.5 5.5l-2.1 2.1M7.6 20.4l-2.1 2.1'/%3E%3C/g%3E%3Ccircle cx='14' cy='14' r='5.5' fill='%23F3D77A' stroke='%23E8A6B7' stroke-width='1.5'/%3E%3C/svg%3E") 14 14, auto;
+}
+
+a,
+button,
+.fl,
+.env,
+.t,
+.btn {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg fill='none' stroke='%23B9A6D8' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M15 1.5v3M15 25.5v3M1.5 15h3M25.5 15h3M5.5 5.5l2.2 2.2M22.3 22.3l2.2 2.2M24.5 5.5l-2.2 2.2M7.7 22.3l-2.2 2.2'/%3E%3C/g%3E%3Ccircle cx='15' cy='15' r='5.5' fill='%23F3D77A' stroke='%23E8A6B7' stroke-width='1.5'/%3E%3C/svg%3E") 15 15, pointer;
+}
