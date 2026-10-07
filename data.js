@@ -80,6 +80,10 @@ env: [
         "Same. Text me. We'll solve nothing, but we'll laugh."
     ],
     [
+        "Open when you need to hear something sweet and lovey-dovey to you",
+        "Hi, I love you so much. Kisses and hugs to the moon and back."
+    ],
+    [
         "Open on your birthday",
         "Happy 30th! You're getting wine, sweet treats, and a whole lot of love from me. Make a wish, and for once, decide quickly. (Okay, you have until midnight.)"
     ]

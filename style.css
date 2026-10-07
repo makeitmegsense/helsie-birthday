@@ -4618,3 +4618,620 @@ footer .hw {
         gap: 9px;
     }
 }
+
+
+/* =========================================================
+   HELSIE LUCKY COLOUR PALETTE — FINAL SITE-WIDE OVERRIDES
+   Pink · Lavender · Blue
+   Midnight/plum are the grounding colours; gold is decorative.
+   ========================================================= */
+
+:root {
+    --forest: #18233D;      /* midnight blue — replaces green */
+    --sage: #9BB9D8;        /* lucky blue */
+    --mist: #E8E1F0;        /* pale lavender */
+    --plum: #80639F;        /* deeper lavender */
+    --lilac: #B9A6D8;       /* lavender */
+    --gold: #F3D77A;        /* tiny celestial accent */
+    --honey: #E8A6B7;       /* lucky pink */
+    --parch: #F7F0E3;       /* warm ivory */
+    --ink: #2A2430;
+    --dew: #9BB9D8;         /* blue */
+    --fae: #C7B5E3;         /* lavender */
+}
+
+/* ---------------------------------------------------------
+   GLOBAL ATMOSPHERE
+   --------------------------------------------------------- */
+
+body {
+    color: #F5EEF5;
+    background:
+        radial-gradient(circle at 12% 8%, rgba(185,166,216,.24), transparent 30%),
+        radial-gradient(circle at 88% 18%, rgba(155,185,216,.18), transparent 32%),
+        radial-gradient(circle at 20% 88%, rgba(232,166,183,.16), transparent 30%),
+        linear-gradient(135deg, #0E1628 0%, #171B32 48%, #211B35 100%) fixed;
+}
+
+/* Keep the grain, but make it softer. */
+body:after {
+    opacity: .045;
+}
+
+/* ---------------------------------------------------------
+   NAVIGATION
+   --------------------------------------------------------- */
+
+nav {
+    background: rgba(18, 27, 48, .91);
+    border-color: rgba(185,166,216,.45);
+    box-shadow:
+        0 8px 26px rgba(8,12,25,.35),
+        0 0 18px rgba(185,166,216,.08);
+}
+
+nav a {
+    color: #F7F0E3;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: #B9A6D8;
+    color: #18233D;
+}
+
+nav a.on {
+    background: #E8A6B7;
+    color: #18233D;
+}
+
+/* ---------------------------------------------------------
+   TYPOGRAPHY / HEADINGS
+   --------------------------------------------------------- */
+
+h1,
+h2 {
+    color: #F7F0E3;
+    text-shadow:
+        0 0 22px rgba(185,166,216,.18),
+        0 0 35px rgba(155,185,216,.08);
+}
+
+h2:after {
+    color: #E8A6B7;
+}
+
+.cap,
+.by,
+.sub,
+footer {
+    color: #C7B5E3;
+}
+
+.lib {
+    color: #9BB9D8;
+}
+
+/* ---------------------------------------------------------
+   HOMEPAGE NAME / HERO
+   --------------------------------------------------------- */
+
+.nm {
+    background:
+        linear-gradient(
+            105deg,
+            #E8A6B7 0%,
+            #F0B7C8 22%,
+            #C7B5E3 48%,
+            #9BB9D8 72%,
+            #E8A6B7 100%
+        ) 0 0 / 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 15px rgba(232,166,183,.20));
+}
+
+.ul path {
+    stroke: #E8A6B7;
+}
+
+#art:before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(232,166,183,.18),
+            rgba(185,166,216,.14) 42%,
+            rgba(155,185,216,.10) 58%,
+            transparent 72%
+        );
+}
+
+/* ---------------------------------------------------------
+   BUTTONS
+   --------------------------------------------------------- */
+
+.btn {
+    background: linear-gradient(135deg, #E8A6B7 0%, #C7B5E3 52%, #9BB9D8 100%);
+    color: #18233D;
+    border: 1px solid rgba(247,240,227,.5);
+    box-shadow:
+        0 0 24px rgba(232,166,183,.24),
+        0 4px 0 #80639F;
+}
+
+.btn:hover {
+    filter: brightness(1.05);
+}
+
+/* ---------------------------------------------------------
+   FLOATING DECORATION
+   --------------------------------------------------------- */
+
+.ff {
+    background: #E8A6B7;
+    box-shadow: 0 0 12px 4px rgba(232,166,183,.48);
+}
+
+/* ---------------------------------------------------------
+   GENERAL CARDS
+   --------------------------------------------------------- */
+
+.card {
+    color: var(--ink);
+    background: linear-gradient(145deg, #FFF9EF 0%, #F6EAF1 100%);
+    border-color: rgba(232,166,183,.72);
+    box-shadow:
+        0 0 0 1px rgba(185,166,216,.28),
+        0 16px 40px rgba(8,12,25,.34),
+        0 0 38px rgba(155,185,216,.08);
+    outline-color: rgba(128,99,159,.32);
+}
+
+.card h3,
+.fa h3 {
+    color: #4D3B60;
+}
+
+.tp:before {
+    background: rgba(232,166,183,.55);
+}
+
+/* ---------------------------------------------------------
+   REASONS / LITTLE DETAILS
+   --------------------------------------------------------- */
+
+.fl i {
+    background: #80639F;
+    color: #FFF9EF;
+}
+
+.fl.o {
+    box-shadow: 0 0 0 3px #E8A6B7;
+    background: rgba(232,166,183,.16);
+}
+
+.gem svg {
+    filter: drop-shadow(0 0 7px rgba(185,166,216,.75));
+}
+
+.bar {
+    background: rgba(255,255,255,.16);
+}
+
+.bar b {
+    background: linear-gradient(90deg, #E8A6B7, #C7B5E3, #9BB9D8);
+}
+
+.pr {
+    color: #C7B5E3;
+}
+
+/* ---------------------------------------------------------
+   OPEN-WHEN ENVELOPES
+   --------------------------------------------------------- */
+
+.env em {
+    background: radial-gradient(circle at 35% 30%, #F0C0CE, #B9A6D8 72%, #80639F);
+    box-shadow: 0 2px 7px rgba(10,15,30,.32);
+}
+
+.env.o:after {
+    color: #80639F;
+}
+
+/* ---------------------------------------------------------
+   FRIENDSHIP / US PAGE
+   --------------------------------------------------------- */
+
+.stats-heading h3 {
+    color: #80639F;
+}
+
+.time-unit span,
+.time-unit small,
+.time-caption {
+    color: #80639F;
+}
+
+.time-divider {
+    color: #E8A6B7;
+}
+
+.time-total {
+    border-color: rgba(185,166,216,.48);
+    color: #80639F;
+}
+
+.time-total b {
+    color: #18233D;
+}
+
+.friendship-numbers {
+    border-color: rgba(185,166,216,.48);
+}
+
+.stat-number {
+    color: #18233D;
+}
+
+.stat-label {
+    color: #80639F;
+}
+
+/* Alternate cards in the bento layout get the three lucky colours. */
+.st div:nth-child(3n + 1) {
+    background: rgba(232,166,183,.18);
+}
+
+.st div:nth-child(3n + 2) {
+    background: rgba(185,166,216,.20);
+}
+
+.st div:nth-child(3n) {
+    background: rgba(155,185,216,.20);
+}
+
+.st b {
+    color: #18233D;
+}
+
+.tl svg {
+    filter: drop-shadow(0 0 5px rgba(185,166,216,.35));
+}
+
+.fin {
+    color: #80639F;
+}
+
+/* ---------------------------------------------------------
+   MODAL / POP-UP
+   --------------------------------------------------------- */
+
+.bd {
+    background: rgba(8,13,26,.74);
+}
+
+.sh small {
+    color: #80639F;
+}
+
+.sh p {
+    color: #18233D;
+}
+
+.x {
+    color: #18233D;
+}
+
+button:focus-visible {
+    outline-color: #E8A6B7;
+}
+
+/* =========================================================
+   HELSIE ARCANA — PINK / LAVENDER / BLUE TAROT PALETTE
+   ========================================================= */
+
+#cards {
+    background:
+        radial-gradient(circle at 18% 20%, rgba(232,166,183,.10), transparent 26%),
+        radial-gradient(circle at 82% 30%, rgba(155,185,216,.10), transparent 28%),
+        linear-gradient(145deg, #10182B 0%, #171B32 48%, #211B35 100%);
+}
+
+#cards::before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(185,166,216,.15) 0%,
+            rgba(232,166,183,.07) 32%,
+            rgba(155,185,216,.07) 48%,
+            transparent 72%
+        );
+}
+
+#cards h2 {
+    color: #F7F0E3;
+    text-shadow:
+        0 0 20px rgba(185,166,216,.18),
+        0 0 30px rgba(232,166,183,.08);
+}
+
+#cards .sub {
+    color: #C7B5E3;
+}
+
+#cards .sub::before {
+    color: #E8A6B7;
+}
+
+/* Tarot card backs: midnight + lavender + blue, with tiny gold details. */
+.ba {
+    background:
+        radial-gradient(circle at 50% 45%, #4B3A64 0%, #292742 42%, #141A2E 100%);
+    color: #E8A6B7;
+    border-color: rgba(232,166,183,.85);
+    box-shadow:
+        inset 0 0 0 5px #141A2E,
+        inset 0 0 0 7px rgba(185,166,216,.48),
+        inset 0 0 35px rgba(7,10,22,.55),
+        0 15px 30px rgba(0,0,0,.30);
+}
+
+.ba::before {
+    border-color: rgba(232,166,183,.58);
+}
+
+.ba::after {
+    border-color: rgba(155,185,216,.34);
+}
+
+.tarot-corner,
+.tarot-stars {
+    color: #E8A6B7;
+}
+
+.tarot-corner {
+    text-shadow: 0 0 7px rgba(232,166,183,.45);
+}
+
+.tarot-stars .star {
+    text-shadow: 0 0 8px rgba(185,166,216,.55);
+}
+
+.tarot-orbit {
+    border-color: rgba(185,166,216,.34);
+}
+
+.inner-orbit {
+    border-color: rgba(155,185,216,.28);
+}
+
+.tarot-emblem {
+    color: #E8A6B7;
+}
+
+.ba svg {
+    filter: drop-shadow(0 0 10px rgba(232,166,183,.20));
+}
+
+.ba .hw {
+    color: #C7B5E3 !important;
+}
+
+/* Tarot fronts stay warm ivory, but the illustration/text accents use the lucky palette. */
+.fa {
+    background:
+        radial-gradient(circle at 18% 18%, rgba(232,166,183,.09), transparent 28%),
+        radial-gradient(circle at 84% 76%, rgba(155,185,216,.10), transparent 30%),
+        linear-gradient(145deg, #FFF9EF 0%, #F5ECF0 54%, #EDE8F1 100%);
+    color: #2A2430;
+    border-color: rgba(185,166,216,.72);
+}
+
+.fa::before {
+    border-color: rgba(185,166,216,.52);
+}
+
+.fa::after {
+    color: #E8A6B7;
+}
+
+.fa small {
+    color: #80639F;
+}
+
+.fa h3 {
+    color: #4D3B60;
+}
+
+.fa h3::after {
+    color: #E8A6B7;
+}
+
+.fa p {
+    color: #4A3E48;
+}
+
+.t.f {
+    filter:
+        drop-shadow(0 22px 35px rgba(0,0,0,.38))
+        drop-shadow(0 0 24px rgba(232,166,183,.13));
+}
+
+/* =========================================================
+   CELESTIAL ALMANAC
+   ========================================================= */
+
+.almanac-heading .almanac-line {
+    background: rgba(185,166,216,.42);
+}
+
+.almanac-heading .almanac-star {
+    color: #E8A6B7;
+}
+
+.almanac-label {
+    color: #C7B5E3;
+}
+
+.almanac-item {
+    border-color: rgba(185,166,216,.20);
+    background: linear-gradient(
+        135deg,
+        rgba(232,166,183,.035),
+        rgba(155,185,216,.025)
+    );
+}
+
+.almanac-item:hover {
+    border-color: rgba(232,166,183,.42);
+    background: rgba(185,166,216,.055);
+}
+
+.almanac-icon {
+    color: #E8A6B7;
+}
+
+.planet-icon {
+    color: #B9A6D8;
+}
+
+.flower-icon {
+    color: #E8A6B7;
+}
+
+.gem-icon {
+    color: #9BB9D8;
+}
+
+.element-icon {
+    color: #B9A6D8;
+}
+
+.almanac-text small {
+    color: rgba(185,166,216,.78);
+}
+
+.almanac-text strong {
+    color: #F8F0E3;
+}
+
+.almanac-text p {
+    color: rgba(248,240,227,.66);
+}
+
+.colour-icon i:nth-child(1) {
+    background: #E8A6B7;
+}
+
+.colour-icon i:nth-child(2) {
+    background: #B9A6D8;
+}
+
+.colour-icon i:nth-child(3) {
+    background: #9BB9D8;
+}
+
+.almanac-note {
+    color: rgba(248,240,227,.68);
+}
+
+.almanac-note span {
+    color: #E8A6B7;
+}
+
+/* ---------------------------------------------------------
+   MOBILE — retain the same palette and improve readability
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    .time-unit span {
+        color: #80639F;
+    }
+
+    .stat-number {
+        color: #18233D;
+    }
+}
+
+/* ---------------------------------------------------------
+   ACCESSIBLE FOCUS / SELECTION
+   --------------------------------------------------------- */
+
+::selection {
+    background: rgba(232,166,183,.55);
+    color: #18233D;
+}
+/* =========================================================
+   OPEN WHEN — ALL ENVELOPES SAME SIZE
+   3 + 3 + 1 LAYOUT
+   ========================================================= */
+
+#env {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch;
+}
+
+/* Every envelope is exactly the same kind of card */
+#env .env,
+#env .env.wd {
+    grid-column: auto !important;
+    width: 100% !important;
+    min-height: 170px;
+}
+
+/* Center the 7th envelope */
+#env .env:last-child {
+    grid-column: 2 !important;
+}
+
+
+/* Tablet */
+@media (max-width: 799px) and (min-width: 601px) {
+    #env {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 18px 14px !important;
+    }
+
+    #env .env:last-child {
+        grid-column: 1 / -1 !important;
+        width: 50% !important;
+        justify-self: center;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    #env {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px 12px !important;
+    }
+
+    #env .env,
+    #env .env.wd {
+        min-height: 155px;
+    }
+
+    #env .env:last-child {
+        grid-column: 1 / -1 !important;
+        width: calc(50% - 6px) !important;
+        justify-self: center;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 430px) {
+    #env {
+        grid-template-columns: 1fr !important;
+    }
+
+    #env .env:last-child {
+        grid-column: auto !important;
+        width: 100% !important;
+    }
+}
